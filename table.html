@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+
+    <style>  
+        table {
+        margin-right: 15%;
+        margin-left: 17%;
+        border-collapse: collapse;
+        width: 50%
+      }
+      
+      td, th {
+        border: 5px solid black;
+        text-align: left;
+        padding: 8px;
+        text-align: center;
+      }
+      
+      caption{
+        font-size: 40px;
+      }
+      </style>
+</head>
+
+<body style="background-color: grey;">
+<table>
+    <caption>This is sample table</caption>
+    <thead>
+        <tr>
+            <th rowspan="2">Name</th>
+            <th rowspan="2">Class</th>
+            <th rowspan="2">Roll</th>
+            <th rowspan="2">Address</th>
+            <th rowspan="2">Contact</th>
+            <th rowspan="2">Email</th>
+            <th rowspan="2">Gender</th>
+            <th colspan="4">Subject</th>
+            <th rowspan="2">Marks</th>
+        </tr>
+        <tr>
+            <th>Maths</th>
+            <th>English</th>
+            <th>Computer</th>
+            <th>Science</th>
+        </tr>
+    </thead>
+    <tbody> 
+        <tr>
+            <td>Nisha Pandey</td>
+            <td>10</td>
+            <td>29</td>
+            <td>Balkhu</td>
+            <td>98**********</td>
+            <td>n***@gmail.com</td>
+            <td>Female</td>
+            <td>Pass</td>
+            <td>Pass</td>
+            <td>Pass</td>
+            <td>Pass</td>
+            <td>40</td>
+        </tr>
+
+        <tr>
+            <td>Anamol Shrestha</td>
+            <td>10</td>
+            <td>56</td>
+            <td>Thapathali</td>
+            <td>98**********</td>
+            <td>a****@gmail.com</td>
+            <td>Male</td>
+            <td>Pass</td>
+            <td>Pass</td>
+            <td>Pass</td>
+            <td>Fail</td>
+            <td>30</td>
+        </tr>
+
+        <tr>
+            <td>Narendra Maharjan</td>
+            <td>10</td>
+            <td>9</td>
+            <td>Baneshwor</td>
+            <td>98**********</td>
+            <td>n******@gmail.com</td>
+            <td>Male</td>
+            <td>Pass</td>
+            <td>Fail</td>
+            <td>Pass</td>
+            <td>Fail</td>
+            <td>20</td>
+        </tr>
+
+        <tfoot style="color: blue;">
+            <th colspan="11">Total Points</th>
+            <th>90</th>
+        </tfoot>
+    </tbody>
+</table>
+
+<table>
+    <caption> Second table </caption>
+    <thead> 
+        <tr> 
+           <th>  </th> 
+           <th> </th> 
+           <th> Bob</th> 
+           <th> Alice </th> 
+        </tr>
+        <tr>
+            <th rowspan="2" style="color: green;">Favourite</th>
+            <th>Color</th>
+            <td style="color: blue;">Blue</td>
+            <td style="color: lightpink;">Purple</td>
+        </tr>
+        <tr>
+            <th>Flavor</th>
+            <td style="color: yellow;">Banana</td>
+            <td style="color: brown;">Chocolate</td>
+        </tr>
+        <tr>
+            <th rowspan="2" style="color: red;">Least Favourite</th>
+            <th>Color</th>
+            <td style="color: yellow;">Yellow</td>
+            <td style="color: pink;">Pink</td>
+        </tr>
+        <tr>
+            <th>Flavor</th>
+            <td style="color: mintcream;">Mint</td>
+            <td style="color: wheat;">Walnut</td>
+        </tr>
+    </thead>
+</table>
+</body>
+
+</html>

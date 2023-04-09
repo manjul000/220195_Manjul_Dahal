@@ -7,16 +7,74 @@
         <meta name="author" cntent="Manjul Dahal">
         <title>This is title</title>
         <link>
-        <style></style>
+        <style>
+            table,td,th{
+                border: 1px solid black;
+                border-collapse: collapse;
+                
+            }
+        </style>
     </head>
+
     <body>
         This portion contains the main content of teh website which is visible to the user.
         <h1>This is heading one.</h1>
         <h2>This is heading two.</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quo, nemo unde et labore ex harum, dolorem placeat ea esse beatae porro nobis eligendi quibusdam molestiae quam enim inventore voluptates.</p>
-        <a href="https://www.google.com" target="_blank">This is anchor (link) to google.</a> We can google search here.
-        <!-- here target attribute "_blank" helps open the new link in a new tab in the web browser.-->
+            <a href="https://www.google.com" target="_blank">This is anchor (link) to google.</a> We can google search here.
+            <!-- here target attribute "_blank" helps open the new link in a new tab in the web browser.-->
         </p>
         <img src="image\image1.png" alt="image not available">
+        <hr>
+        <p>
+            Types of clock:
+            <ul style="list-style-type: square;">   <!--style type by default is disc. disc,circle,square-->
+                <li>Analog</li>
+                <li>Digital</li>
+                <li>Hybrid</li>
+            </ul>
+        </p>
+
+        <p>
+            Types of clock:
+            <ol type="1">   <!--1,A,a,I,i-->
+                <li>Analog</li>
+                <li>Digital</li>
+                <li>Hybrid</li>
+            </ol>
+        </p>
+
+        <table>
+            <caption>
+                Sample
+            </caption>
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Class</th>
+                    <th>Address</th>
+                    <th>Contact Number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Anamol</td>
+                    <td>Shrestha</td>
+                    <td>Second Semester</td>
+                    <td>Thapathali</td>
+                    <td>9841252635</td>
+                </tr>
+                <tr>
+                    <td>Nisha</td>
+                    <td>Pandey</td>
+                    <td>Second Semester</td>
+                    <td>Balkhu</td>
+                    <td>9856485623</td>
+                </tr>
+                
+            </tbody>
+        </table>
+
     </body>
 </html>
