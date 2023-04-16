@@ -1,0 +1,71 @@
+p {
+    font-size: 18px;
+    color: blue;
+}
+
+#second {
+    font-size: 20px;
+    color: red;
+}
+
+.third {
+    font-size: 22px;
+    color: brown;
+}
+
+a:link {
+    color: greenyellow;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: teal;
+}
+
+::selection {
+    color: red;
+    background-color: greenyellow;
+}
+
+#Lorem::first-letter{
+    font-size: 30px;
+}
+
+#Lorem::first-line{
+    color: black;
+}
+
+input[type="text"] {
+    width: 150px;
+    display: block;
+    margin-bottom: 10px;
+    background-color: yellow;
+}
+
+input[type="button"]{
+    width:120px;
+    margin-left:35px;
+    display:block;
+}
+
+.main-div h1 { /* This is descendant selector.*/
+    background-color: orange;
+    color: white;
+}
+
+.main-div > h2 { /* This is child  selector.*/
+    background-color: blue;
+    color: greenyellow;
+}
+
+h3 + h4 {
+    background-color: orange;
+    color: white;
+}
+
+#red {
+    color: red !important; /*Bad practice. Don't use !important*/
+}
