@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block 2.0</title>
+    <style>
+        .center-align1 {
+            width: 100%;
+            background: red;
+            display: flex;
+            height: 300px;
+            align-items: center; /*top to bottom*/
+            justify-content: center; /*left to right*/
+        }
+
+        .center-align2 {
+            display: grid;
+            place-items: center;
+            background: green;
+            height: 300px;
+        }
+
+        .center-align3 {
+            position: relative;
+            height: 300px;
+            background: salmon;
+        }
+
+        .center-align3 > p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="center-align1">There is a fire starting in my heart.</div>
+    <div class="center-align2">Reaching a fever pitch and it's bringing me out the dark.</div>
+    <div class="center-align3"><p>Go ahead and sell me out and I'll lay your ship bare.</p>
+    </div>
+    
+</body>
+</html>
