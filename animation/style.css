@@ -1,0 +1,50 @@
+.background-car {
+    width: 100%;
+    height: 500px;
+    animation-name: background-car-anim;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes background-car-anim {
+    from {background-color: black;}
+    to {background-color: gray;}
+}
+
+.target {
+    position: absolute;
+    top:150px;
+    background-color: greenyellow;
+    width: 100px;
+    height: 75px;
+    animation-name: shoot;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes shoot {
+    from {left: 0%;}
+    to {left: 90%;}
+}
+
+.text {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: 100;
+    padding-top: 160px;
+    animation-name: text-animation;
+    opacity: 0;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes text-animation {
+   from { opacity: 0;}
+   to {opacity: 1;}
+}
