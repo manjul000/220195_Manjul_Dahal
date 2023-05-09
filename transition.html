@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        body {
+            background-color: bisque;
+            transition-property: background-color;
+            transition-duration: 2s;
+            transition-delay: 0.2s;
+        }
+
+        body:hover {
+            background-color: black;
+        }
+
+        p {
+            color: bisque;
+        }
+
+        .button {
+            position: absolute;
+            top: 40%;
+            left: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition-property: background-color,transform,width,height,color;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0.2s;
+            width: 200px;
+            height: 200px;
+            background-color: aqua;    
+        }
+
+        .button:hover {
+            background-color: red;
+            width: 150px;
+            height: 150px;
+            transform: rotate(-20deg);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <p>Secret Message Here.</p>
+    <div class="button">
+        This is transition.
+    </div>
+</body>
+</html>
