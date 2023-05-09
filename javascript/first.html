@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Javascript</title>
+    <script>
+        function myFunction(){
+            console.log("Button Clicked!");
+        }
+
+        function hidden_paragraph(){
+            document.getElementById("para1").innerHTML = "Paragraph Changed";
+        }
+
+        function document_clear(){
+            document.write("Hello Javascript!");
+        }
+
+        function popup_window(){
+            window.alert("Hello Javascript!");
+        }
+    </script>
+
+    <style>
+        * {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        button {
+            width: 75px;
+            height: 75px;
+            background-color: greenyellow;
+        }
+
+        body {
+            background-color: gray;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <button type="button" onclick="myFunction()">Console Log</button>
+    <button type="button" onclick="hidden_paragraph()">Hidden Paragraph</button>
+    <button type="button" onclick="document_clear()">Document Clear</button>
+    <button type="button" onclick="popup_window()">Popup!</button>
+    <p id="para1"></p>
+</body>
+</html>
