@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+
+    <style>
+        body {
+            background-color: purple;
+            color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div id="quiz"></div>
+
+    <button type="button" onclick="checkans()">Submit</button>
+
+    <div id="result"></div>
+
+    <script>
+        const question =  [
+
+    {
+
+        question: "What is the capital of France?",
+
+        options: ["Paris", "London", "Berlin", "Madrid"],
+
+        answer: "Paris"
+
+    },
+
+    {
+
+        question: "What is the highest mountain in the world?",
+
+        options: ["Mount Everest", "K2", "Makalu", "Lhotse"],
+
+        answer: "Mount Everest"
+
+    },
+
+    {
+
+        question: "What is the largest planet in our solar system?",
+
+        options: ["Venus", "Saturn", "Jupiter", "Mars"],
+
+        answer: "Jupiter"
+
+    }
+
+    ];
+
+    //Initalize the html for the quiz
+    let quizhtml = "";
+
+    //Looping through the questions
+    for(let i=0;i<question.length;i++){
+
+        quizhtml += "Q: " + question[i].question
+        quizhtml += "<br>";
+
+        for(let j=0;j<question[i].options.length;j++){
+            quizhtml += "<label>";
+            quizhtml += "<input type='radio' name='question" + i + "' value ='" + question[i].options[j] + "'>" + question[i].options[j];
+            quizhtml += "<br>";
+            quizhtml += "</label>";
+        }
+    }
+
+    //check answers
+    function checkans(){
+        const numCorrect = 0;
+
+        for (let i;i<question.length;i++){
+            const selectAnswer = document.querySelector("input[name='question" + i + "']:checked").value;
+
+            if (selectAnswer == question[i].answer){
+                numCorrect++;
+            }
+        }
+
+    document.getElementById("result").innerHTML = "You got " + numCorrect + " out of " + question.length + " right."
+
+    }
+
+    document.getElementById("quiz").innerHTML = quizhtml;
+
+    </script>
+</body>
+</html>

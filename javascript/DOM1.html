@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <script type="text/javascript">
+
+        function myFunc1(){
+            document.getElementById("demo").style.backgroundColor = "black";
+            document.getElementById("demo").style.color = "white";
+        }
+        function myFunc2(){
+            document.getElementById("demo").style.backgroundColor = "white";
+            document.getElementById("demo").style.color = "black";
+        }
+
+        /*Other method*/
+
+        function other1(){
+            document.getElementById("other").classList.add("light-dark");
+        }
+
+        function other2(){
+            document.getElementById("other").classList.remove("light-dark");
+        }
+
+    </script>
+
+    <style>
+        .light-dark {
+            background-color: purple;
+            color: aqua;
+        }
+    </style>
+
+</head>
+<body id="demo">
+    <button onclick="document.getElementById('myImage').src='../html+css/image/image1.png'">Click to change image</button>
+    <br>
+    <img id="myImage" src="../html+css/image/image2.png" style="width:500px;">
+    <br>
+
+    <button onclick="myFunc1()">Dark Mode</button>
+    <button onclick="myFunc2()">Light Mode</button>
+    <br>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eaque odit aperiam iure eveniet adipisci magnam commodi incidunt beatae autem ducimus rerum aspernatur perferendis accusamus veniam, officiis error? Ipsa, ipsum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad optio unde sint harum quisquam dolores placeat et perferendis autem, magni dolor deleniti delectus velit iste. Ducimus optio hic porro. Sunt.</p>
+    
+    <div id="other">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus facilis quos, saepe, placeat aut ratione cumque tenetur nihil aliquam et, voluptas fugiat harum perferendis! Reiciendis odit nobis blanditiis earum ad. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum fuga eum vero doloribus illum soluta illo, molestias fugiat nisi. Adipisci, commodi nihil? Veniam, reprehenderit enim. Totam unde inventore ullam est!</p>
+    </div>
+
+    <button onclick="other1()">Purple</button>
+    <button onclick="other2()">Change</button>
+</body>
+</html>
