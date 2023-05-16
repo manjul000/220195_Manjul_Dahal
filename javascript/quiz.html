@@ -67,16 +67,15 @@
         for(let j=0;j<question[i].options.length;j++){
             quizhtml += "<label>";
             quizhtml += "<input type='radio' name='question" + i + "' value ='" + question[i].options[j] + "'>" + question[i].options[j];
-            quizhtml += "<br>";
-            quizhtml += "</label>";
+            quizhtml += "</label> <br>";
         }
     }
 
     //check answers
     function checkans(){
-        const numCorrect = 0;
+        let numCorrect = 0;
 
-        for (let i;i<question.length;i++){
+        for (let i=0;i<question.length;i++){
             const selectAnswer = document.querySelector("input[name='question" + i + "']:checked").value;
 
             if (selectAnswer == question[i].answer){
