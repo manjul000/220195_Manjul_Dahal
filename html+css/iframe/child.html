@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child</title>
+</head>
+<body>
+    <p id="doby">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, fuga necessitatibus? Fugit quam natus ullam. Minima repudiandae ipsa vero blanditiis est velit repellendus, nemo aperiam facere eos officiis porro. Harum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim deserunt a nesciunt explicabo maiores voluptatem, earum minima eius animi, non odit dolore. Ipsa recusandae dolores assumenda voluptatem sequi quas nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptate neque consequuntur accusantium, unde corrupti vitae labore cupiditate magnam voluptatum, placeat id consequatur pariatur debitis harum adipisci sapiente esse temporibus?</p>
+</body>
+<script>
+    const parentDocument = window.parent.document;
+    const parentHeading = parentDocument.getElementById("Heading");
+    console.log(parentHeading.textContent);
+
+    const para = document.getElementById("doby");
+    para.textContent = para.textContent + parentHeading.textContent;
+</script>
+</html>
